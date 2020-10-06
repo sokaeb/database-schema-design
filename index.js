@@ -2,6 +2,8 @@ const express = require('express');
 // helmet provides simple security defaults
 const helmet= require('helmet');
 
+const db = require('./database/connection');
+
 const server = express();
 
 server.use(helmet());
